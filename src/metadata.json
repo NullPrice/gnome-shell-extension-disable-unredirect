@@ -1,0 +1,11 @@
+{
+   "shell-version":[
+      "40"
+   ],
+   "uuid":"unredirect@aunetx",
+   "name":"Disable unredirect fullscreen windows",
+   "description":"Disables unredirect fullscreen windows in gnome-shell to prevent artifacts when in fullscreen.\n\nThis version makes sure the unredirect option is not re-enabled automatically by the shell.",
+   "url":"https://github.com/aunetx/gnome-shell-extension-disable-unredirect",
+   "original-authors":"Kazimieras Vaina",
+   "version": 1
+}

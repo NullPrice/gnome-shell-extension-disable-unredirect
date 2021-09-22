@@ -1,18 +1,26 @@
-Disables unredirect fullscreen windows in gnome-shell to workaround https://bugzilla.redhat.com/show_bug.cgi?id=767397
+# GNOME Shell Extension - Disable unredirect fullscreen windows
 
-(bug, when clicking on full screen windows goes through to windows underneath).
+Disables unredirect fullscreen windows in gnome-shell to prevent artifacts when
+in fullscreen.
 
-Install
--------
+This version makes sure the unredirect option is not re-enabled automatically by
+the shell; this is a fork from
+[original extension by kazysmaster](https://github.com/kazysmaster/gnome-shell-extension-disable-unredirect).
 
-This command will grab this file from github:
+## Install from source
 
-```bash
-ext=~/.local/share/gnome-shell/extensions; mkdir -p "$ext" && cd "$ext" && curl -LkSs https://api.github.com/repos/kazysmaster/gnome-shell-extension-disable-unredirect/tarball | tar -xvz --wildcards --strip 1 "kazysmaster-gnome-shell-extension-disable-unredirect-???????/unredirect@vaina.lt"
+To install from github:
+
+```sh
+git clone https://github.com/aunetx/gnome-shell-extension-disable-unredirect
+cd gnome-shell-extension-disable-unredirect
+make install
 ```
 
-Then press ALT-F2 and enter ```r``` and press enter to restart gnome-shell.
+Then press ALT-F2 and enter `r` and press enter to restart gnome-shell (or under
+Wayland, logout and login again).
 
-In firefox visit extensions.gnome.org and enable the extension under "Installed Extensions".
+## License
 
-If you don't see the extension you might have to add your version of GNOME shell to [this file](https://github.com/kazysmaster/gnome-shell-extension-disable-unredirect/blob/master/unredirect%40vaina.lt/metadata.json) (located at `~/.local/share/gnome-shell/extensions/unredirect@vaina.lt/metadata.json`).
+This program is distributed under the terms of the GNU General Public License,
+version 2 or later.
