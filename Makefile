@@ -8,17 +8,17 @@ build: clean
 
 pkg: build
 	mkdir -p pkg/
-	cd build/ && zip -r ../pkg/unredirect@aunetx.zip .
+	cd build/ && zip -r ../pkg/unredirect@nullprice.zip .
 
 
 install: build
-	rm -rf $(HOME)/.local/share/gnome-shell/extensions/unredirect@aunetx
-	mkdir -p $(HOME)/.local/share/gnome-shell/extensions/unredirect@aunetx
-	cp -r build/* $(HOME)/.local/share/gnome-shell/extensions/unredirect@aunetx/
+	rm -rf $(HOME)/.local/share/gnome-shell/extensions/unredirect@nullprice
+	mkdir -p $(HOME)/.local/share/gnome-shell/extensions/unredirect@nullprice
+	cp -r build/* $(HOME)/.local/share/gnome-shell/extensions/unredirect@nullprice/
 
 
 remove:
-	rm -rf $(HOME)/.local/share/gnome-shell/extensions/unredirect@aunetx
+	rm -rf $(HOME)/.local/share/gnome-shell/extensions/unredirect@nullprice
 
 
 clean:
