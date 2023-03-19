@@ -1,6 +1,9 @@
 {
    "shell-version":[
-      "40"
+      "40",
+      "41",
+      "42",
+      "43"
    ],
    "uuid":"unredirect@aunetx",
    "name":"Disable unredirect fullscreen windows",
